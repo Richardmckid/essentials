@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ message: 'Request body is empty' }, { status: 500 })
     }
 
-    console.log(request)
+    console.log(body)
     return NextResponse.json({ message: 'POST Method' }, { status: 200 })
 }
 
@@ -34,3 +34,4 @@ export async function DELETE(request: NextRequest) {
 export async function OPTIONS(request: NextRequest) {
     return NextResponse.json({ error: 'OPTIONS is not allowed' }, { status: 405 })
 }
+
